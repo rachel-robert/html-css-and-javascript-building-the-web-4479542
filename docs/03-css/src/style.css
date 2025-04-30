@@ -1,4 +1,3 @@
-/* 
 body {
 	font-family: helvetica, arial, sans-serif;
 }
@@ -101,4 +100,29 @@ h1 {
 	position: absolute;
 	bottom: 45%;
 	left: 5%;
-} */
+}
+
+/* Define the animation */
+@keyframes slide-in {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0);
+	}
+}
+
+/* Apply the animation to an element */
+.plant {
+	animation: slide-in 1s ease-in-out;
+}
+
+.plant {
+	transition: width 2s, height 2s, background-color 1s;
+}
+
+.plant:hover {
+	width: 200px;
+	height: 200px;
+	background-color: goldenrod;
+}
